@@ -46,7 +46,7 @@ This project aims to develop a minimal working User Experience (Ux) for a basic 
 2. **Compile and Run:** Compile Java code and execute the main program to interact with the employee management system.
 
 ## Contributors
-- [Your Name](link to your GitHub profile)
+- [Sophie Nguyen](https://github.com/SophieNguyen113)
 
 ## License
-This project is licensed under the [MIT License](link to license file).
+This project is licensed under the [MIT License](https://github.com/SophieNguyen113/Soft-Engines-Project/blob/main/LICENSE).
