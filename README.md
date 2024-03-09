@@ -47,6 +47,8 @@ This project aims to develop a minimal working User Experience (Ux) for a basic 
 
 ## Contributors
 - [Sophie Nguyen](https://github.com/SophieNguyen113)
+- [Paul Lichtenwalner](https://github.com/Paul-Lichtenwalner)
+- [Hamdi Akin](https://github.com/hakin2)
 
 ## License
 This project is licensed under the [MIT License](https://github.com/SophieNguyen113/Soft-Engines-Project/blob/main/LICENSE).
