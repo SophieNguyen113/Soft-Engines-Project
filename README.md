@@ -12,7 +12,7 @@ This project aims to develop a minimal working User Experience (Ux) for a basic 
    - Generate reports for:
      - Full-time employee information with pay statement history.
      - Total pay for the month by job title.
-     - Total pay for the month by division.
+     - Total pay for the month by division. Test
 3. **Database Schema Enhancements:**
    - Addition of tables:
      - Address for employee including demographic items (gender, pronouns, identified race, date of birth, mobile/phone).
