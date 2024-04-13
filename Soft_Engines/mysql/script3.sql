@@ -1,3 +1,8 @@
+/* 
+    Script 3: Deliverable item 1
+*/
+
+
 USE employeeData;
 
 CREATE TABLE address (

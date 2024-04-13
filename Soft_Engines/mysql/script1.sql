@@ -1,6 +1,5 @@
 /* 
-    THESE ARE FOR dBeaver usage, Not VS Code...
-    Otherwise your system may give you unpredictable results. 	
+    Script 1: EmployeeData mySQL script with primary key and foreign key 
 */
 
 

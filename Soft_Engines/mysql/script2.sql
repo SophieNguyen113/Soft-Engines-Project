@@ -1,5 +1,9 @@
-SET FOREIGN_KEY_CHECKS=0;
+/* 
+    Script 2: Insert data to EmployeeData database with primary key and foreign key 
+*/
 
+
+SET FOREIGN_KEY_CHECKS=0;
 
 INSERT INTO job_titles (job_title_id,job_title)
 VALUES 

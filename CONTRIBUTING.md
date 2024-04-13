@@ -36,4 +36,3 @@ If you have any questions or need further assistance, feel free to reach out to 
 By contributing to Soft Engines Project, you agree that your contributions will be licensed under the MIT License. See the [LICENSE](https://github.com/SophieNguyen113/Soft-Engines-Project/blob/main/LICENSE) file for more details.
 
 Thank you for your interest in contributing to Soft Engines Project! We appreciate your help in making this project better for everyone.
-
