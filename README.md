@@ -4,6 +4,11 @@
 
 This project aims to develop a minimal working User Experience (UX) for a basic employee management system for company 'Z'. The system will allow for managing employee data, generating reports, and performing various operations such as updating employee information and calculating salaries. The system will primarily be console-based or implemented using JavaFX.
 
+## Details
+
+- [Google Drive](https://drive.google.com/drive/folders/1oMvi1UUFH6f84JbCNwf5t53U1x6hCOtJ?usp=sharing)
+- [Report](https://docs.google.com/document/d/1TSaVuq5BlGX7zMIxwfFwdV2BNREj13-D/edit?usp=sharing&ouid=115063291951967236235&rtpof=true&sd=true)
+
 ## Features
 
 1. **Employee Data Management:**
