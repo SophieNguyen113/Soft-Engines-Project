@@ -47,7 +47,7 @@ This project aims to develop a minimal working User Experience (UX) for a basic 
 1. **Database Setup:**
    - Ensure MySQL database is set up and populated with initial data using dBeaver and provided [MySQL scripts](https://github.com/SophieNguyen113/Soft-Engines-Project/tree/main/Soft_Engines/mysql).
 2. **Compile and Run:**
-   - Compile Java code and execute the main program `ShowEmployees.java` to interact with the employee management system.
+   - Compile Java code and execute the main program `GetEmployees.java` to interact with the employee management system.
 
 ## Contributors
 
