@@ -1,5 +1,10 @@
 /* 
     Script 3: Deliverable item 1
+
+    2.0. DATABASE SCHEMA DIAGRAM
+      a. Use the existing “employeeData” tables and create additional tables:
+        i.  	Address of employee
+        ii. 	Person’s demographic items: (Gender, pronouns, identified race, DOB, SSN, etc.)
 */
 
 

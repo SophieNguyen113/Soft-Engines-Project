@@ -2,7 +2,7 @@
     Script 5:
 
     2.0. DATABASE SCHEMA DIAGRAM
-      c.  Create a part-time employee payroll table to track hourly wage and taxes, but no 401K or health care cost
+      c. Create a part-time employee payroll table to track hourly wage and taxes, but no 401K or health care cost
 */
 
 
