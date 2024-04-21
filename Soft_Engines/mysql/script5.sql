@@ -12,6 +12,7 @@ CREATE TABLE parttime_payroll (
   payID INT,
   pay_date DATE,
   hourly_wage DECIMAL(8,2),
+  working_hour INT,
   fed_tax DECIMAL(7,2),
   fed_med DECIMAL(7,2),
   fed_SS DECIMAL(7,2),
@@ -22,4 +23,4 @@ CREATE TABLE parttime_payroll (
   FOREIGN KEY (empid) REFERENCES employees(empid)
 );
 
-rename table payroll to salary_payroll;
+rename table payroll to fulltime_payroll;
