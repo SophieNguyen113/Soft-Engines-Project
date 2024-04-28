@@ -54,6 +54,10 @@ public class UpdateEmployee {
             }
         } catch (Exception e) {
             System.out.println("ERROR " + e.getLocalizedMessage());
+        } finally {
+            if (scanner != null) {
+                scanner.close();
+            }
         }
     }
 }
