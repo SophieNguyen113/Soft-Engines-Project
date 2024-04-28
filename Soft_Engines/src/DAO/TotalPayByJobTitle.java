@@ -1,8 +1,11 @@
 package DAO;
 
 import java.sql.*;
+import java.text.DecimalFormat;
 
 public class TotalPayByJobTitle {
+    private static final DecimalFormat FORMATTER = new DecimalFormat("#,###.00");
+
     public StringBuilder getTotalPayByJobTitle(Connection myConn) {
         StringBuilder output = new StringBuilder("");
         String sqlCommand = "SELECT jt.job_title, SUM(p.earnings) AS total_earnings, SUM(p.fed_tax) AS total_fed_tax, " +
@@ -17,18 +20,21 @@ public class TotalPayByJobTitle {
 
         try {
             Statement myStmt = myConn.createStatement();
-            output.append("\tJob Title\tTotal Earnings\tFederal\tFedMed\tFedSS\tState\t401K\tHealthCare\n");
+            output.append(String.format("%-25s%-25s%-25s%-25s%-20s%-20s%-20s%-20s\n", "Job Title", "Total Earnings", "Federal", "FedMed", "FedSS", "State", "401K", "HealthCare"));
+            output.append(String.format("%-25s%-25s%-25s%-25s%-20s%-20s%-20s%-20s\n", "---------", "--------------", "-------", "------", "------", "-----", "----", "----------"));
+
             ResultSet myRS = myStmt.executeQuery(sqlCommand);
 
             while (myRS.next()) {
-                output.append("\t" + myRS.getString("jt.job_title") + "\t");
-                output.append(myRS.getDouble("total_earnings") + "\t");
-                output.append(myRS.getDouble("total_fed_tax") + "\t");
-                output.append(myRS.getDouble("total_fed_med") + "\t");
-                output.append(myRS.getDouble("total_fed_ss") + "\t");
-                output.append(myRS.getDouble("total_state_tax") + "\t");
-                output.append(myRS.getDouble("total_retire_401k") + "\t");
-                output.append(myRS.getDouble("total_health_care") + "\n");
+                output.append(String.format("%-25s%-25s%-25s%-25s%-20s%-20s%-20s%-20s\n",
+                        myRS.getString("jt.job_title"),
+                        FORMATTER.format(myRS.getDouble("total_earnings")),
+                        FORMATTER.format(myRS.getDouble("total_fed_tax")),
+                        FORMATTER.format(myRS.getDouble("total_fed_med")),
+                        FORMATTER.format(myRS.getDouble("total_fed_ss")),
+                        FORMATTER.format(myRS.getDouble("total_state_tax")),
+                        FORMATTER.format(myRS.getDouble("total_retire_401k")),
+                        FORMATTER.format(myRS.getDouble("total_health_care"))));
             }
 
         } catch (Exception e) {
