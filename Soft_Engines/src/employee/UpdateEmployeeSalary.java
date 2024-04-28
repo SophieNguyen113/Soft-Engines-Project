@@ -30,10 +30,6 @@ public class UpdateEmployeeSalary {
             System.out.println("Percentage increase applied: " + percentageIncrease + "%");
         } catch (Exception e) {
             System.out.println("ERROR " + e.getLocalizedMessage());
-        } finally {
-            if (scanner != null) {
-                scanner.close();
-            }
         }
     }
 }

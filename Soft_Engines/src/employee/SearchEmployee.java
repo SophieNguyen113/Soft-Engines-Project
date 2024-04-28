@@ -10,7 +10,7 @@ public class SearchEmployee {
         try {
             Statement myStmt = myConn.createStatement();
 
-            System.out.print("Enter employee name (or part of the name), SSN, or employee ID: ");
+            System.out.print("Enter SSN or employee ID: ");
             String searchTerm = scanner.nextLine();
 
             String sqlCommand = "SELECT e.empid, e.Fname, e.Lname, e.email, e.HireDate, e.Salary, e.SSN, jt.job_title " +
@@ -39,10 +39,6 @@ public class SearchEmployee {
             }
         } catch (Exception e) {
             System.out.println("ERROR " + e.getLocalizedMessage());
-        } finally {
-            if (scanner != null) {
-                scanner.close();
-            }
         }
     }
 }

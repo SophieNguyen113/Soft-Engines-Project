@@ -47,17 +47,38 @@ public class UpdateEmployee {
                 if (!newLname.isEmpty()) {
                     myStmt.executeUpdate("UPDATE employees SET Lname = '" + newLname + "' WHERE empid = " + empID + ";");
                 }
+                
+                System.out.print("Enter the new email (or press Enter to keep the same): ");
+                String newEmail = scanner.nextLine().trim();
+                if (!newEmail.isEmpty()) {
+                    myStmt.executeUpdate("UPDATE employees SET email = '" + newEmail + "' WHERE empid = " + empID + ";");
+                }
 
-                // Add code to update other fields as needed (email, HireDate, Salary, SSN)
+                System.out.print("Enter the new hire date in YYYY-MM-DD format (or press Enter to keep the same): ");
+                String newHireDateStr = scanner.nextLine().trim();
+                if (!newHireDateStr.isEmpty()) {
+                    java.sql.Date newHireDate = java.sql.Date.valueOf(newHireDateStr);
+                    myStmt.executeUpdate("UPDATE employees SET HireDate = '" + newHireDate + "' WHERE empid = " + empID + ";");
+                }
+
+                System.out.print("Enter the new salary (or press Enter to keep the same): ");
+                String newSalaryStr = scanner.nextLine().trim();
+                if (!newSalaryStr.isEmpty()) {
+                    double newSalary = Double.parseDouble(newSalaryStr);
+                    myStmt.executeUpdate("UPDATE employees SET Salary = " + newSalary + " WHERE empid = " + empID + ";");
+                }
+
+                System.out.print("Enter the new SSN (or press Enter to keep the same): ");
+                String newSSNStr = scanner.nextLine().trim();
+                if (!newSSNStr.isEmpty()) {
+                    int newSSN = Integer.parseInt(newSSNStr);
+                    myStmt.executeUpdate("UPDATE employees SET SSN = " + newSSN + " WHERE empid = " + empID + ";");
+                }
 
                 System.out.println("Employee data updated successfully.");
             }
         } catch (Exception e) {
             System.out.println("ERROR " + e.getLocalizedMessage());
-        } finally {
-            if (scanner != null) {
-                scanner.close();
-            }
         }
     }
 }
