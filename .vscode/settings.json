@@ -1,0 +1,22 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "/Users/sophienguyen113/Downloads/mysql-connector-j-8.1.0.jar"
+  ],
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "mysql",
+      "database": "mysql",
+      "username": "root",
+      "password": "@Duyen123456"
+    }
+  ]
+}

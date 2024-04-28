@@ -1,12 +1,14 @@
+package DAO;
+
 import java.sql.*;
 
-public class Payroll {
+public class FulltimePayroll {
     public StringBuilder getPayByMonth(int empID, Connection myConn) {
         StringBuilder output1 = new StringBuilder("");
         String sqlcommand1 = "SELECT e.empid, p.pay_date, p.earnings, p.fed_tax, " +
                 "p.fed_med,p.fed_SS,p.state_tax,p.retire_401k,p.health_care  " +
                 "FROM employees e " +
-                "JOIN payroll p ON e.empid = p.empid " +
+                "JOIN fulltime_payroll p ON e.empid = p.empid " +
                 "WHERE e.empid = " + empID + " " +
                 "ORDER BY p.pay_date;";
         try {
