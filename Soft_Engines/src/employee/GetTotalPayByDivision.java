@@ -1,6 +1,7 @@
 package employee;
 
 import java.sql.*;
+
 import DAO.TotalPayByDivision;
 
 public class GetTotalPayByDivision {

@@ -1,6 +1,7 @@
 package employee;
 
 import java.sql.*;
+
 import DAO.TotalPayByJobTitle;
 
 public class GetTotalPayByJobTitle {
