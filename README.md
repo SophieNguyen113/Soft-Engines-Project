@@ -7,7 +7,8 @@ This project aims to develop a minimal working User Experience (UX) for a basic 
 ## Details
 
 - [Google Drive](https://drive.google.com/drive/folders/1oMvi1UUFH6f84JbCNwf5t53U1x6hCOtJ?usp=sharing)
-- [Report](https://docs.google.com/document/d/1TSaVuq5BlGX7zMIxwfFwdV2BNREj13-D/edit?usp=sharing&ouid=115063291951967236235&rtpof=true&sd=true)
+- [Report](https://drive.google.com/file/d/1EbjNbGx9VxHnsbHQJ-O95tb6AQbTAQGO/view?usp=sharing)
+- [Video](https://drive.google.com/file/d/1vXMj-nc0RTIDk-PTs2TrxLFrKCu8i6Lx/view?usp=sharing)
 
 ## Features
 
@@ -52,7 +53,7 @@ This project aims to develop a minimal working User Experience (UX) for a basic 
 1. **Database Setup:**
    - Ensure MySQL database is set up and populated with initial data using dBeaver and provided [MySQL scripts](https://github.com/SophieNguyen113/Soft-Engines-Project/tree/main/Soft_Engines/mysql).
 2. **Compile and Run:**
-   - Compile Java code and execute the main program `GetEmployees.java` to interact with the employee management system.
+   - Compile Java code and execute the main program `EmployeeManager.java` to interact with the employee management system.
 
 ## Contributors
 
