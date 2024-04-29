@@ -10,6 +10,7 @@ public class UpdateEmployeeSalary {
         try {
             Statement myStmt = myConn.createStatement();
 
+            System.out.println();
             System.out.print("Enter the minimum salary for the range: ");
             double minSalary = scanner.nextDouble();
 
@@ -28,6 +29,7 @@ public class UpdateEmployeeSalary {
             System.out.println("\nReport 7: Update Employee Salary");
             System.out.println("Salary updated for " + rowsAffected + " employee(s) with salaries between $" + minSalary + " and $" + maxSalary);
             System.out.println("Percentage increase applied: " + percentageIncrease + "%");
+            System.out.println();
         } catch (Exception e) {
             System.out.println("ERROR " + e.getLocalizedMessage());
         }

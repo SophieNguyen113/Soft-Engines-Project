@@ -10,6 +10,7 @@ public class UpdateEmployee {
         try {
             Statement myStmt = myConn.createStatement();
 
+            System.out.println();
             System.out.print("Enter the employee ID of the employee you want to update: ");
             int empID = scanner.nextInt();
             scanner.nextLine(); // Consume the newline character
@@ -24,6 +25,7 @@ public class UpdateEmployee {
 
             if (!myRS.isBeforeFirst()) {
                 System.out.println("No employee found with ID: " + empID);
+                System.out.println();
             } else {
                 myRS.next();
                 System.out.println("\nReport 6: Update Employee Data");
@@ -75,7 +77,9 @@ public class UpdateEmployee {
                     myStmt.executeUpdate("UPDATE employees SET SSN = " + newSSN + " WHERE empid = " + empID + ";");
                 }
 
+                System.out.println();
                 System.out.println("Employee data updated successfully.");
+                System.out.println();
             }
         } catch (Exception e) {
             System.out.println("ERROR " + e.getLocalizedMessage());

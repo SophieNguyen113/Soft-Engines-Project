@@ -10,6 +10,7 @@ public class SearchEmployee {
         try {
             Statement myStmt = myConn.createStatement();
 
+            System.out.println();
             System.out.print("Enter SSN or employee ID: ");
             String searchTerm = scanner.nextLine();
 

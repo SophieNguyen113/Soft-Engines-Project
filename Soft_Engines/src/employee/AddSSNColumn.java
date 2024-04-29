@@ -11,6 +11,7 @@ public class AddSSNColumn {
             ResultSet rs = myStmt.executeQuery("SHOW COLUMNS FROM employees WHERE Field = 'SSN'");
             if (rs.next()) {
                 myStmt.executeUpdate("ALTER TABLE employees DROP COLUMN SSN");
+                System.out.println();
                 System.out.println("Existing SSN column dropped.");
             }
 
@@ -32,6 +33,7 @@ public class AddSSNColumn {
             }
 
             System.out.println("SSN data inserted successfully.");
+            System.out.println();
         } catch (Exception e) {
             System.out.println("ERROR " + e.getLocalizedMessage());
         }
